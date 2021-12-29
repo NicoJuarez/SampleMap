@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/splash_screen_root"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.SplashScreen"
+    app:layoutDescription="@xml/activity_splash_screen_scene"
+    android:background="@color/di_blue"
+    tools:viewBindingIgnore="true">
+
+    <ImageView
+        android:id="@+id/di_logo"
+        android:src="@drawable/di_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="1"
+        />
+    <TextView
+        android:id="@+id/department"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@id/di_logo"
+        app:layout_constraintStart_toStartOf="@id/di_logo"
+        app:layout_constraintEnd_toEndOf="@id/di_logo"
+        android:text="Departamento de"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif-medium"
+        />
+
+    <TextView
+        android:id="@+id/computing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/department"
+        app:layout_constraintStart_toStartOf="@id/department"
+        app:layout_constraintEnd_toEndOf="@id/department"
+        android:text="Informática"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif-medium"
+        />
+
+</androidx.constraintlayout.motion.widget.MotionLayout>

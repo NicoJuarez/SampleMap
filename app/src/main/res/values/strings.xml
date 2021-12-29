@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">SampleMap</string>
+
+
+    <!--Descripciones de imagenes o algo-->
+    <string name="fab_location_description">Botón flotante de ubicación.</string>
+</resources>
